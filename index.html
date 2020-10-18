@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="script.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Technical documentation</title>
+</head>
+
+<body>
+    <main id="main-doc">
+        <section class="main-section" id="Introduction_to_Java_applications:_Input/Output">
+            <header>Introduction to Java applications: Input/Output</header>
+            <p>A Java application executes when you use the java command to launch the JVM. Comments document programs and improve their readability. The compiler ignores them. A comment that begins with // is an end-of-line comment—it terminates at the
+                end of the line on which it appears. Traditional comments can be spread over several lines and are delimited by /* and */. Javadoc comments, delimited by /** and */, enable you to embed program documentation in your code. The javadoc utility
+                program generates HTML pages based on these comments.</p>
+            <p>A syntax error (also called a compiler error, compile-time error or compilation error) occurs when the compiler encounters code that violates Java’s language rules. It’s similar to a grammar error in a natural language. Blank lines, space
+                characters and tab characters are known as white space. White space makes programs easier to read and is ignored by the compiler. Keywords are reserved for use by Java and are always spelled with all lowercase letters. Keywordclass introduces
+                a class declaration. By convention, all class names in Java begin with a capital letter and capitalize the first letter of each word they include (e.g., SampleClassName). Method main is the starting point of every Java application and
+                must begin with otherwise, the JVM will not execute the application.</p>
+            <code> public static void main(String[] args)</code>
+
+        </section>
+        <section class="main-section" id="Control_Statement_I:_Assignment,_Incrementation_and_Decrementation_Operators">
+            <header>Control Statement I: Assignment, Incrementation and Decrementation Operators</header>
+            <p>Before writing a program to solve a problem, you must have a thorough understanding of the problem and a carefully planned approach to solving it. You must also understand the building blocks that are available and employ proven program-construction
+                techniques
+            </p>
+            <p>Normally, statements in a program are executed one after the other in the order in which they’re written. This process is called sequential execution. Various Java statements enable you to specify that the next statement to execute is not
+                necessarily the next one in sequence. This is called <em>transfer of control</em>.
+                <i>Bohm</i> and <i>Jacopini </i> demonstrated that all programs could be written in terms of only three control structures</p>
+
+            <ul>
+                <li>The <strong>sequence </strong> structure</li>
+                <li>The <strong>selection</strong> structure</li>
+                <li>The <strong>repetition</strong> structure</li>
+            </ul>
+            <p>Put explicitly, the basic controls statements we use are:</p>
+            <ul>
+                <li>Assignment(=), example <code>x = y;</code></li>
+                <li>Incrementation(++), example <code>x++; </code> Please note that this is the same as <code>x + 1</code></li>
+                <li>Decrementation(--), example <code>x--; </code> Please note that this is the same as <code>x - 1</code></li>
+            </ul>
+
+        </section>
+
+        <section class="main-section" id="Control_Statement_II:_Logical_Operators">
+            <header>Control Statement II: Logical Operators</header>
+            <p>When the for statement begins executing, its control variable is declared and initialized. If the loop-continuation condition is initially true, the body executes. After executing the loop’s body, the increment expression executes. Then the
+                loop-continuation test is performed again to determine whether the program should continue with the next iteration of the loop.
+            </p>
+            <p> The general format of the for statement is:</p>
+            <pre>for (initialization; loopContinuationCondition; increment)</pre>
+            <p>where the initialization expression names the loop’s control variable and provides its initial value, loopContinuationCondition determines whether the loop should continue executing and increment modifies the control variable’s value, so that
+                the loop-continuation condition eventually becomes false. The two semicolons in the for header are required. Most for statements can be represented with equivalent while statements as follows:</p>
+            <pre>
+                initialization;
+                while (loopContinuationCondition)
+                {
+                statement
+                increment;
+                }
+            </pre>
+            <p>Typically, for statements are used for counter-controlled repetition and while statements for sentinel-controlled repetition.</p>
+        </section>
+
+        <section class="main-section" id="Methods">
+            <header>Methods</header>
+            <p>Methods are declared within classes. Classes are typically grouped into packages so they can be imported and reused. Methods allow you to modularize a program by separating its tasks into self-contained units. The statements in a method are
+                written only once and hidden from other methods. Using existing methods as building blocks to create new programs is a form of software reusability that allows you to avoid repeating code within a program.</p>
+            <p>There are three ways to call a method—using a method name by itself to call another method of the same class; using an object’s variable name followed by a dot (.) and the method name to call a method of the object; and using the class name
+                and a dot (.) to call a static method of a class.</p>
+        </section>
+
+        <section class="main-section" id="Arrays">
+            <header>Arrays</header>
+            <p>An array is a group of variables (called elements or components) containing values that all have the same type. Arrays are objects, so they’re considered reference types. A program refers to any one of an array’s elements with an array-access
+                expression that includes the name of the array followed by the index of the particular element in square brackets. The first element in every array has index zero and is sometimes called the zeroth element. An index must be a nonnegative
+                integer. A program can use an expression as an index. Anarrayobject’s length instance variable stores the array’s length.</p>
+            <p>To create an array object, specify the array’s element type and the number of elements as part of an array-creation expression that uses keyword new. When an array is created, each element receives a default value—zero for numeric primitive-type
+                elements, false for boolean elements and null for references. In an array declaration, the type and the square brackets can be combined at the beginning of the declaration to indicate that all the identifiers in the declaration are array
+                variables. Every element of a primitive-type array contains a variable of the array’s declared type. Every element of a reference-type array is a reference to an object of the array’s declared type.</p>
+            <p>Code example:</p>
+            <code>int[] c = new int[12];</code>
+
+        </section>
+        </div>
+        <nav id="navbar">
+            <header>Java Documentation</header>
+            <ul>
+                <a href="#Introduction_to_Java_applications:_Input/Output" class="nav-link" rel="internal">
+                    <li>Introduction to Java applications: Input/Output</li>
+                </a>
+                <a href="#Control_Statement_I:_Assignment,_Incrementation_and_Decrementation_Operators" class="nav-link" rel="internal">
+                    <li>Control Statement I: Assignment, Incrementation and Decrementation Operators</li>
+                </a>
+                <a href="#Control_Statement_II:_Logical_Operators" class="nav-link" rel="internal">
+                    <li>Control Statement II: Logical Operators</li>
+                </a>
+                <a href="#Methods" class="nav-link" rel="internal">
+                    <li>Methods</li>
+                </a>
+                <a href="#Arrays" class="nav-link" rel="internal">
+                    <li>Arrays</li>
+                </a>
+            </ul>
+        </nav>
+</body>
+
+</html>
